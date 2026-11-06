@@ -85,27 +85,28 @@
 //      }
 // }
 // Итоговая задача. «Угадай число»
-// int secret = 42;
-// int number;
+int secret = 42;
+int number = 0;
 
-// for (int a = 1; a <= 5; a++)
-// {
-//     Console.Write("Введите число: ");
-//     number = Convert.ToInt32(Console.ReadLine());
+for (int a = 1; a <= 5; a++)
+{
+    Console.Write("Введите число: ");
+    number = Convert.ToInt32(Console.ReadLine());
 
-//     if (number == secret)
-//     {
-//         Console.WriteLine("Победа! Попыток: " + a);
-//         break;
-//     }
-//     else if (number < secret)
-//         Console.WriteLine("Больше");
-//     else
-//         Console.WriteLine("Меньше");
-// }
+    if (number == secret)
+    {
+        Console.WriteLine("Победа! Попыток: " + a);
+        break;
+    }
+    else if (number < secret)
+        Console.WriteLine("Больше");
+    else
+        Console.WriteLine("Меньше");
+}
 
-// if (number != secret)
-//     Console.WriteLine("Вы проиграли, число было 42");
+if (number != secret){
+    Console.WriteLine("Вы проиграли, число было 42");
+}
 // Дополнительное задание
 // int n = Convert.ToInt32(Console.ReadLine());
 // int sum = 0;
